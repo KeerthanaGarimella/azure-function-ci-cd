@@ -31,7 +31,7 @@ steps:
 
 - task: AzureFunctionApp@1
   inputs:
-    azureSubscription: '<your-service-connection-name>'
+    azureSubscription: 'Ci-cd'
     appType: 'functionApp'
     appName: 'ci-cd-8985513'
     package: '$(Build.ArtifactStagingDirectory)/functionapp.zip'
